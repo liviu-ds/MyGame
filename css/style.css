@@ -1,3 +1,9 @@
+
+.body{
+  background-color: rgb(11, 11, 141);
+}
+
+
 .board {
   display: inline-block;
   margin: 20px;

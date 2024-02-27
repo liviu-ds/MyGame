@@ -40,6 +40,10 @@ h1{
   color: #d62828;
 }
 
+.container {
+  text-align: center;
+}
+
 button {
   height: 40px;
   width: 150px;

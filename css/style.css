@@ -19,3 +19,32 @@
     grid-column-gap: 30px;
     width: 350px;
 }
+section{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 6.5vw;
+}
+
+ h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #d62828;
+}
+
+button {
+  height: 40px;
+  width: 150px;
+  background-color: #023047;
+  color: white;
+  border: 1px solid #00b4d8;
+  
+}

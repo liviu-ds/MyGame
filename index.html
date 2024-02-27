@@ -1,19 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Battleship</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Battleship Game</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script defer src="js/main.js"></script>
 </head>
+
 <body>
-    <h1>Battleship</h1>
-    <h2>Your turn</h2>
-    <div class="board" id="player1Board"></div>
-    <div class="board" id="player2Board"></div>
-    <button>Start</button><button>Next!</button><button>Stop</button>
-
-
+  <header>
+    <h1>Battleship Game</h1>
+  </header>
+  <main>
+    <h2 id="player-turn">Player 1's Turn</h2>
+    <section id="enemy-board">
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="c0r0"></div>
+        <div class="cell" id="c1r0"></div>
+        <div class="cell" id="c2r0"></div>
+        <div class="cell" id="c3r0"></div>
+        <div class="cell" id="c4r0"></div>
+        <div class="cell" id="c5r0"></div>
+        <div class="cell" id="c6r0"></div>
+        <div class="cell" id="c7r0"></div>
+        <div class="cell" id="c8r0"></div>
+        <div class="cell" id="c9r0"></div>
+      </div>
+    
+    </section>
+    <section id="player-board">
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="pc0r0"></div>
+        <div class="cell" id="pc1r0"></div>
+        <div class="cell" id="pc2r0"></div>
+        <div class="cell" id="pc3r0"></div>
+        <div class="cell" id="pc4r0"></div>
+        <div class="cell" id="pc5r0"></div>
+        <div class="cell" id="pc6r0"></div>
+        <div class="cell" id="pc7r0"></div>
+        <div class="cell" id="pc8r0"></div>
+        <div class="cell" id="pc9r0"></div>
+      </div>
+ 
+    </section>
+    <button id="play-again">PLAY AGAIN</button>
+  </main>
 </body>
+
 </html>

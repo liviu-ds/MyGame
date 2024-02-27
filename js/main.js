@@ -4,16 +4,7 @@ const player1Board = document.getElementById('player1Board');
 const player2Board = document.getElementById('player2Board');
 
 
-/*----- state variables -----*/
 
-
-/*----- cached elements  -----*/
-
-
-/*----- event listeners -----*/
-
-
-/*----- functions -----*/
 
 
 

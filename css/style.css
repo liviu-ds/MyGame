@@ -1,0 +1,25 @@
+.board {
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid black;
+}
+.row {
+  display: flex;
+}
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid lightgray;
+  text-align: center;
+  line-height: 30px;
+}
+.ship {
+  background-color: gray;
+}
+.hit {
+  background-color: red;
+}
+
+.button {
+  background-color: red;
+}
